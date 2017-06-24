@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tes</title>
+  <script src="all.js"></script>
+</head>
+<body>
+  <div class="nafs-container" data-slug="tees">
+  </div>
+  <script>
++function(){
+  var nafs = new NotAFreeSpeech({
+    readEndpoint: 'https://cavepainting-d8434.firebaseio.com/comments/first.json',
+    writeEndpoint: 'https://cavepainting-d8434.firebaseio.com/comments/first.json'
+  });
+  nafs.init();
+}();
+  </script>
+</body>
+</html>

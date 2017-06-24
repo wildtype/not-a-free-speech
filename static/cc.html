@@ -1,0 +1,76 @@
+<style>
+*{margin:0;padding:0;}
+
+input, textarea, button {
+  font-size: 16px;
+  width: 100%;
+  margin: .25em auto 1em auto;
+  padding: .5em;
+  resize: none;
+}
+
+textarea {
+  height: 10em;
+}
+
+button {
+  border: 2px solid #335;
+  background-color: #273974;
+  color: #fff;
+  cursor: pointer;
+}
+label {
+  display: none;
+}
+.article-comments__list{
+  margin: 1em;
+}
+.article-comments__list li{
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+  padding: 1em;
+}
+
+.article-comment__container {
+  margin: 1em;
+}
+</style>
+
+<div class="article-comments__list">
+  <ol>
+    <li>
+      <p class="article-comments-item__id">Anonim, 22 Mei 2017</p>
+      <p>Selamat gan!</p>
+    </li>
+    <li>
+      <p class="article-comments-item__id">Anonim, 22 Mei 2017</p>
+      <p>Ah yang bener gan!</p>
+    </li>
+  </ol>
+</div>
+<div class="nafs-form__container">
+  <form class="nafs-form" id="nafs-form" action="#" method="POST">
+    <div>
+      <label for="nafs-form__body">Komentar</label>
+      <textarea id="nafs-form__body" name="comment" placeholder="Komentar"></textarea>
+    </div>
+
+    <div>
+      <label for="nafs-form__name">Nama (tidak wajib)</label>
+      <input type="text" name="name" id="nafs-form__name" placeholder="Nama (tidak wajib)" />
+    </div>
+
+    <div>
+      <label for="nafs-form__email">Email (tidak wajib)</label>
+      <input type="text" name="email" id="nafs-form__email" placeholder="Email (tidak wajib)"/>
+    </div>
+
+    <div>
+      <label for="nafs-form__website">Website (tidak wajib)</label>
+      <input type="text" name="website" id="nafs-form__website" placeholder="Website (tidak wajib)" />
+    </div>
+    <div>
+      <button>Kirim</button>
+    </div>
+  </form>
+</div>
